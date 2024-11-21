@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="change_driver_wizard_view_form" model="ir.ui.view">
+        <field name="name">change_driver_wizard_view_form</field>
+        <field name="model">change.driver.wizard</field>
+        <field name="arch" type="xml">
+            <form string="change_driver_wizard_form">
+                <sheet>
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="join_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
