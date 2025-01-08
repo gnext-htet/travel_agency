@@ -34,3 +34,8 @@ class TravelCar(models.Model):
             'target': 'new',
 
         }
+
+    def action_change_driver_history(self):
+        return{
+            
+        }
