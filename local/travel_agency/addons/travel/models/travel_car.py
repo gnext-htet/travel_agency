@@ -13,7 +13,10 @@ class TravelCar(models.Model):
         ('draft', 'Draft'),
         ('running', 'Running')
     ], default='draft')
-
+    
+   #image field
+    avatar = fields.Binary( string='Avatar')
+    
     def name_get(self):
         return [(rec.id, f"{rec.car_number} ({rec.travel_agency_id.name})") for rec in self]
 
@@ -36,6 +39,12 @@ class TravelCar(models.Model):
         }
 
     def action_change_driver_history(self):
-        return{
-            
+        return {
+            'name': f"{self.car_number}'s Driver History",
+            'type': 'ir.actions.act_window',
+            'res_model': 'travel.driver.history',
+            'view_mode': 'tree',
+            'target': 'current',
+            'domain': [('travel_car_id','=', self.id)] #domian use for history aspect of stats btn
         }
+        

@@ -14,7 +14,7 @@
         "views/travel_agency.xml",
         "views/travel_car.xml",
         "views/travel_driver_history.xml",
-
+        "views/transportation_route.xml",
         #widzard
         "wizard/change_driver_wizard.xml",
 
