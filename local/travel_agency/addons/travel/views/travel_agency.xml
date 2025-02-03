@@ -5,9 +5,11 @@
         <field name="model">travel.agency</field>
         <field name="arch" type="xml">
             <tree string="travel_agency_tree">
-                <field name="name"/>
-                 <field name="reference" optional="show"/>
-                <field name="license_no" optional="hide"/>
+
+                    <field name="name"/>
+                    <field name="reference" optional="show"/>
+                    <field name="license_no" optional="hide"/>
+
 
 
             </tree>

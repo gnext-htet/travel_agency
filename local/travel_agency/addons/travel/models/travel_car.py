@@ -43,8 +43,8 @@ class TravelCar(models.Model):
             'name': f"{self.car_number}'s Driver History",
             'type': 'ir.actions.act_window',
             'res_model': 'travel.driver.history',
-            'view_mode': 'tree',
+            'view_mode': 'tree,form',
             'target': 'current',
-            'domain': [('travel_car_id','=', self.id)] #domian use for history aspect of stats btn
+            'domain': [('travel_car_id', '=', self.id)]  #domian use for history aspect of stats btn
         }
-        
+
