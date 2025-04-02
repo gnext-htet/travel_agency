@@ -15,7 +15,7 @@ class TravelCar(models.Model):
     ], default='draft')
     
    #image field
-    avatar = fields.Binary( string='Avatar')
+    avatar = fields.Binary(string='Avatar')
     
     def name_get(self):
         return [(rec.id, f"{rec.car_number} ({rec.travel_agency_id.name})") for rec in self]

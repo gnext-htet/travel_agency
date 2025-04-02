@@ -1,6 +1,6 @@
 {
     "name":"Travelling",
-    'depends': [ 'mail'],
+    'depends': ['base', 'mail', 'account'],
     "data":[
         #security
         "security/ir.model.access.csv",

@@ -5,7 +5,7 @@ class Township(models.Model):
     _description = 'Township'
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char(track_visibility='onchange')
+    name = fields.Char(track_visibility='true')
     gate_ids = fields.One2many('travel.gate', 'township_id')
 
 
